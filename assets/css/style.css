@@ -1,0 +1,19 @@
+/* Removing Default Browser Behaviour */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Visual Aide for Initial Page Layout */
+header {
+    background-color: coral;
+}
+
+main {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: palevioletred;
+}
