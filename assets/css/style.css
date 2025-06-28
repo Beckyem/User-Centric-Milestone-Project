@@ -1,24 +1,21 @@
 /* Fonts chosen from Fontjoy selection and imported from fonts.google.com (Google Fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Merienda:wght@300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-/* Removing Default Browser Behaviour */
+/* Removing Default Browser Behaviour of Everything */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
-
-/* Visual Aide for Initial Page Layout */
+/* ===== Header Section ===== */
 header {
     position: fixed;
     z-index: 100;
     width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(66, 66, 66, 0.5);
+    box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
 }
 
 header a {
@@ -31,6 +28,7 @@ h1 {
     font-style: italic;
 }
 
+/* ----- Nav Section ----- */
 #menu {
     font-size: 110%;
     list-style-type: none;
@@ -50,6 +48,18 @@ h1 {
     font-weight: 700;
 }
 
+/* ---  Dropdown Toggle --- */
+nav {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
+}
+
+/* ===== Main Section ===== */
 main {
     background-color: lightskyblue;
 }
@@ -62,6 +72,9 @@ p{
     font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
 }
 
+/* ===== Footer Section ===== */
 footer {
     background-color: palevioletred;
 }
+
+/* ======= Media Query Section ======= */
