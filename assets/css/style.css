@@ -13,10 +13,15 @@
 
 /* Visual Aide for Initial Page Layout */
 header {
-    background-color: coral;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(66, 66, 66, 0.5);
 }
 
-h1 {
+#logo {
     font-family: Merienda, "Merinda One", sans-serif;
 }
 
@@ -25,7 +30,7 @@ main {
     background-color: lightskyblue;
 }
 
-h2, h3 {
+h1, h2, h3 {
     font-family: Arima, Veranda, sans-serif;
 }
 
