@@ -10,11 +10,15 @@
 
 /* ===== Header Section ===== */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
     position: fixed;
+    top: 0; /* Needed to be specified for other web browsers (Opera GX) */
     z-index: 100;
     width: 100%;
-    background-color: rgb(255, 255, 255);
     padding: 1rem;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
 }
 
@@ -50,18 +54,32 @@ h1 {
 
 /* ---  Dropdown Toggle --- */
 nav {
+    display: none;
+    top: 99%; /* Could still see box-shadow of header at 100% */
     position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
     width: 100%;
     left: 0;
     padding: 0 1rem;
+}
+
+/* Toggle */
+#nav-toggle{
     display: none;
 }
 
+#nav-toggle:checked~nav{
+    display: block;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 /* ===== Main Section ===== */
 main {
-    background-color: lightskyblue;
+    margin-top: 47px;
+    background-color: rgb(1, 34, 54);
 }
 
 h1, h2, h3 {
@@ -74,7 +92,10 @@ p{
 
 /* ===== Footer Section ===== */
 footer {
-    background-color: palevioletred;
+    background-color: rgb(117, 5, 42);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* ======= Media Query Section ======= */
