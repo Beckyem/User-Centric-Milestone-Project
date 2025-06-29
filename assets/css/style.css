@@ -134,3 +134,9 @@ footer {
         margin-top: 107px;
     }
 }
+
+@media screen and (min-width: 992px) { /* Laptops and Larger */
+    #menu a:hover {
+        border-bottom: 1px solid rgba(66,66, 66, 0.5);
+    }
+}
