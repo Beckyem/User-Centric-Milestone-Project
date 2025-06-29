@@ -30,6 +30,7 @@ header a {
 h1 {
     font-family: Merienda, "Merinda One", sans-serif;
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 /* ----- Nav Section ----- */
@@ -79,11 +80,11 @@ nav {
 }
 /* ===== Main Section ===== */
 main {
-    margin-top: 84px;
+    margin-top: 69px;
     background-color: rgb(99, 182, 235);
 }
 
-h1, h2, h3 {
+h2, h3, h4 {
     font-family: Arima, Veranda, sans-serif;
 }
 
@@ -93,10 +94,30 @@ p{
 
 /* ===== Footer Section ===== */
 footer {
-    background-color: rgb(117, 5, 42);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
+}
+
+footer h4 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    color: rgb(66, 66, 66);
 }
 
 /* ======= Media Query Section ======= */
