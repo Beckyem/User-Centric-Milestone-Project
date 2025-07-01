@@ -91,7 +91,6 @@ nav {
 main {
     margin-top: 69px;
     background: url("../images/Owenea_River.jpg") center/cover;
-    overlay: rgba(40, 40, 40, 0.5);
     flex: 1 0 auto;
 }
 /* !!! YOU LAST LEFT OFF HERE !!!*/
@@ -104,9 +103,23 @@ main {
 
 }
 
-#hero-text {
+.hero-text {
     background-color: rgba(255, 255, 255, 0.5);
+}
 
+.btn {
+    display: inline-block;
+    background-color: #5c946e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #417d5a;
 }
 
 h2, h3, h4 {
