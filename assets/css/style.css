@@ -147,6 +147,13 @@ footer h4 {
 }
 
 /* ======= Media Query Section ======= */
+@media screen and (min-width: 576px) { /* Landscape Phones and Larger */
+    #hero {
+        max-width: 350px;
+        margin-left: 2rem;
+    }
+}
+
 @media screen and (min-width: 768px) { /* Tablets and Larger */
     /* ----- Nav Seciton ----- */
     nav {
