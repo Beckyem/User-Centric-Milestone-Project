@@ -90,8 +90,23 @@ nav {
 /* ===== Main Section ===== */
 main {
     margin-top: 69px;
-    background-color: rgb(99, 182, 235);
+    background: url("../images/Owenea_River.jpg") center/cover;
+    overlay: rgba(40, 40, 40, 0.5);
     flex: 1 0 auto;
+}
+/* !!! YOU LAST LEFT OFF HERE !!!*/
+#hero {
+    margin: 10rem 5% 2rem 5%;
+    min-height: 200px;
+    background-color: rgba(255, 255, 250, 0.6);
+    border: 4px solid rgba(255, 255, 250, 0.7);
+    padding: 1rem 10px;
+
+}
+
+#hero-text {
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 h2, h3, h4 {
