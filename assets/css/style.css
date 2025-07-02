@@ -119,6 +119,15 @@ main {
     padding: 2rem;
 }
 
+#sales-pitch {
+    max-width: 500px;
+    text-align: center;
+    font-style: italic;
+    font-size: 110%;
+    margin: 0 auto 2rem auto;
+    align-content: center;
+}
+
 .btn {
     display: inline-block;
     background-color: #5c946e;
