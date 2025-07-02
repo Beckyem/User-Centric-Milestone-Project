@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     /* -- General Project Styles & Theme -- */
     color: rgb(66, 66, 66);
-    background-color: rgb(255, 255, 250);
+    background-color: rgb(244, 255, 244);
 }
 
 .hidden { /* To hide headings meant for SEO */
@@ -72,7 +72,7 @@ nav {
     display: none;
     top: 99%; /* Could still see box-shadow of header at 100% */
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(244, 255, 244);
     box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
     width: 100%;
     left: 0;
@@ -299,5 +299,30 @@ footer h4 {
 @media screen and (min-width: 992px) { /* Laptops and Larger */
     #menu a:hover {
         border-bottom: 1px solid rgba(66,66, 66, 0.5);
+    }
+
+    #hero {
+        margin: 14rem 5% 5rem 30rem;
+        max-width: 550px;
+    }
+    
+    .hero-text{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    #sales-pitch {
+        font-size: 1.3rem;
+    }
+
+    #about-camps img {
+        src: url("../images/arts_and_crafts_big.png");
+    }
+
+    #about-parks img {
+        src: url("../images/parks_big.png");
     }
 }
