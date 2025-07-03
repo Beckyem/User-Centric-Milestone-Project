@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     /* -- General Project Styles & Theme -- */
     color: rgb(66, 66, 66);
-    background-color: rgb(244, 255, 244);
+    background-color: rgb(230, 255, 230);
 }
 
 .hidden { /* To hide headings meant for SEO */
@@ -72,7 +72,7 @@ nav {
     display: none;
     top: 99%; /* Could still see box-shadow of header at 100% */
     position: absolute;
-    background-color: rgb(244, 255, 244);
+    background-color: inherit;
     box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
     width: 100%;
     left: 0;
@@ -95,29 +95,32 @@ nav {
 /* ===== Main Section ===== */
 main {
     margin-top: 69px;
-    background: url("../images/Owenea_River.jpg") center/cover;
     flex: 1 0 auto;
     padding-bottom: 75px; /* Ensuring footer doesn't cover the end of #about */
     /* For the #hero and #about section layout */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: rgb(255, 255, 248);
 }
 
 #hero {
-    margin: 10rem 5% 2rem 5%;
-    min-height: 200px;
+    background: url("../images/Owenea_River.jpg") center/cover;
+    min-height: 70vh;
+    width: 100%;
+}
+
+#hero-text{
     background-color: rgba(255, 255, 250, 0.6);
     border: 4px solid rgba(255, 255, 250, 0.7);
+    margin: 10rem 5% 2rem 5%;
     border-radius: 10px;
     padding: 1rem 2rem;
-
 }
 
 #about {
     width: 100%;
     flex-grow: 1;
-    background-color: rgba(255, 255, 248, 0.95);
     padding: 2rem;
 }
 
@@ -203,7 +206,7 @@ footer h4 {
 
 /* ======= Media Query Section ======= */
 @media screen and (min-width: 576px) { /* Landscape Phones and Larger */
-    #hero {
+    #hero-text {
         max-width: 350px;
         margin-left: 2rem;
     }
@@ -256,8 +259,6 @@ footer h4 {
         left: auto;
         right: 45%;
     }
-    
-    
 }
 
 @media screen and (min-width: 768px) { /* Tablets and Larger */
@@ -292,7 +293,11 @@ footer h4 {
     /* ===== Main Section ===== */
     main {
         margin-top: 107px;
-        padding-bottom: 77px;
+        padding-bottom: 100px;
+    }
+
+    #hero-text {
+        margin: 34rem 0 3rem 5rem;
     }
 }
 
@@ -302,12 +307,13 @@ footer h4 {
     }
 
     #hero {
-        margin: 14rem 5% 5rem 30rem;
-        max-width: 550px;
+        max-height: 60vh;
     }
-    
-    .hero-text{
+
+    #hero-text {
+        max-width: 550px;
         font-size: 1.5rem;
+        margin: 7em 0 3rem 5rem;
     }
 
     h1{
@@ -318,11 +324,33 @@ footer h4 {
         font-size: 1.3rem;
     }
 
+    .overlay-info {
+        position: absolute;
+        top: 93%;
+        left: 20%;
+    }
+
+    .btn {
+        position: absolute;
+        top: 110%;
+        left: 46%;
+    }
+
+    #about-parks .btn {
+        left: auto;
+        right: 48%;
+    }
+
     #about-camps img {
         src: url("../images/arts_and_crafts_big.png");
     }
 
     #about-parks img {
         src: url("../images/parks_big.png");
+    }
+
+    #about-parks .overlay-info {
+        left: auto;
+        right: 20%;
     }
 }
