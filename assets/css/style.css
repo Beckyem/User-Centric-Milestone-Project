@@ -181,7 +181,7 @@ main {
     background-color: #417d5a;
 }
 
-/* ##### Camps Page Styles #### */
+/* ===== Camps & Parks Styles ===== */
 #recomendation-list {
     display: flex;
     flex-direction: column;
@@ -192,16 +192,18 @@ main {
     padding: 0 2rem;
 }
 
-.set-box {
-    padding: 0.3rem;
+/* ----- Card Grids ----- */
+.set-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:2rem;
+    padding:0 1rem;
 }
 
-.suggestion-card {
-    width: 100%;
-    margin: 1.5rem 0;
-    border: 3px solid rgb(240, 240, 235);
-    box-shadow: 2px 2px rgba(66, 66, 66, 0.8);
-    position: relative;
+.suggestion-card{
+    flex:1 1 280px;
+    max-width:420px;
 }
 
 .suggestion-card img {
@@ -215,7 +217,7 @@ main {
 }
 
 .suggestion-card .btn {
-    position: relative;
+    position: static;
     left: auto;
     right: 5%;
 }
@@ -278,7 +280,7 @@ footer h4 {
         max-width: 350px;
         margin-left: 2rem;
     }
-
+    /* ----- About Section ----- */
     #about {
         padding-bottom: 4.5rem;
     }
@@ -313,7 +315,6 @@ footer h4 {
         margin-top: 7rem;
     }
 
-    /* Optional: Mirror second section for zig-zag look */
     #about-parks.stamp-section {
         flex-direction: row-reverse;
     }
@@ -326,6 +327,11 @@ footer h4 {
     #about-parks .btn {
         left: auto;
         right: 45%;
+    }
+
+    /* ##### Camps Page Section ##### */
+    .suggestion-card {
+        max-width: 500px;
     }
 }
 /*####################################################################################################################*/
