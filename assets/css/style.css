@@ -235,6 +235,11 @@ main {
     box-shadow: 0 4px 8px rgba(66, 66, 66, 0.8);
 }
 
+article{
+    max-width:500px;
+    margin:0 auto;
+}
+
 #info-break h3 {
     margin: 0.3rem 0;
 }
