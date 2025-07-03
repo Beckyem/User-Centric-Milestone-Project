@@ -132,7 +132,11 @@ main {
 #about, #details {
     width: 100%;
     flex-grow: 1;
-    padding: 2rem;
+    padding-top: 1.5rem;
+}
+
+#about {
+    padding: 1.5rem;
 }
 
 #sales-pitch {
@@ -179,7 +183,68 @@ main {
 }
 
 /* ##### Camps Page Styles #### */
+#recomendation-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
+#first-set, #second-set {
+    padding: 0 2rem;
+}
+
+.set-box {
+    padding: 0.3rem;
+}
+
+.suggestion-card {
+    width: 100%;
+    margin: 1.5rem 0;
+    border: 3px solid rgb(240, 240, 235);
+    box-shadow: 2px 2px rgba(66, 66, 66, 0.8);
+    position: relative;
+}
+
+.suggestion-card img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.suggestion-card p {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.suggestion-card .btn {
+    position: relative;
+    left: auto;
+    right: 5%;
+}
+
+#info-break {
+    width: 100%;
+    background-color: rgba(200, 255, 200, 0.75);
+    border-top: 10px solid rgb(150, 205, 150);
+    border-bottom: 10px solid rgb(150, 205, 150);
+    right: 10%;
+    padding: 0.3rem 2rem;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0 4px 8px rgba(66, 66, 66, 0.8);
+}
+
+#info-break h3 {
+    margin: 0.3rem 0;
+}
+
+/* ##### Parks Page Styles #### */
+.video {
+    width: 104%;
+    position: relative;
+    right: 2%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgb(66, 66, 66);
+}
 
 /* ===== Footer Section ===== */
 footer {
