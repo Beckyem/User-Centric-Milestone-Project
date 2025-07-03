@@ -13,12 +13,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* -- General Project Styles & Theme -- */
     color: rgb(66, 66, 66);
     background-color: rgb(230, 255, 230);
 }
 
-.hidden { /* To hide headings meant for SEO */
+.hidden {
     display: none;
 }
 
@@ -36,7 +35,7 @@ header {
     justify-content: space-between;
     align-content: baseline;
     position: fixed;
-    top: 0; /* Needed to be specified for other web browsers (Opera GX) */
+    top: 0;
     z-index: 100;
     width: 100%;
     padding: 1rem;
@@ -54,7 +53,6 @@ h1 {
     font-style: italic;
     font-size: 1.5rem;
 }
-
 
 /* ----- Nav Section ----- */
 #menu {
@@ -79,7 +77,7 @@ h1 {
 /* ---  Dropdown Toggle --- */
 nav {
     display: none;
-    top: 99%; /* Could still see box-shadow of header at 100% */
+    top: 99%;
     position: absolute;
     background-color: inherit;
     box-shadow: 0 2px 2px rgba(66, 66, 66, 0.5);
@@ -107,7 +105,6 @@ main {
     margin-top: 69px;
     padding-bottom: 20px;
     flex: 1 0 auto;
-    /* For the #hero and #about section layout */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -282,13 +279,14 @@ footer h4 {
     color: rgb(66, 66, 66);
     font-size: 1.5rem;
 }
-/*####################################################################################################################*/
+
 /* ======= Media Query Section ======= */
 @media screen and (min-width: 576px) { /* Landscape Phones and Larger */
     #hero-text {
         max-width: 350px;
         margin-left: 2rem;
     }
+
     /* ----- About Section ----- */
     #about {
         padding-bottom: 4.5rem;
@@ -343,7 +341,7 @@ footer h4 {
         max-width: 500px;
     }
 }
-/*####################################################################################################################*/
+
 @media screen and (min-width: 768px) { /* Tablets and Larger */
     /* ----- Nav Seciton ----- */
     nav{
@@ -386,7 +384,7 @@ footer h4 {
         margin: clamp(4rem, 10vw, 12rem) 0 2rem 5%;
     }
 }
-/*####################################################################################################################*/
+
 @media screen and (min-width: 992px) { /* Laptops and Larger */
     #menu a:hover {
         border-bottom: 1px solid rgba(66,66, 66, 0.5);
