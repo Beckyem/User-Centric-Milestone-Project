@@ -178,6 +178,11 @@ main {
     background-color: #417d5a;
 }
 
+/* ##### Camps Page Styles #### */
+#details {
+    padding: 2rem;
+}
+
 /* ===== Footer Section ===== */
 footer {
     background-color: inherit;
