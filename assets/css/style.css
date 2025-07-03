@@ -55,6 +55,7 @@ h1 {
     font-size: 1.5rem;
 }
 
+
 /* ----- Nav Section ----- */
 #menu {
     font-size: 110%;
@@ -366,7 +367,10 @@ footer h4 {
     }
 
     #logo {
-        font-size: 200%;
+        font-family: Merienda, "Merinda One", sans-serif;
+        font-size: 190%;
+        font-weight: 800;
+        font-style: italic;
         line-height: 75px;
         margin: 0 0.5rem;
     }
