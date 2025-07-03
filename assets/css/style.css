@@ -418,14 +418,6 @@ footer h4 {
         right: 48%;
     }
 
-    #about-camps img {
-        src: url("../images/arts_and_crafts_big.png");
-    }
-
-    #about-parks img {
-        src: url("../images/parks_big.png");
-    }
-
     #about-parks .overlay-info {
         left: auto;
         right: 20%;
