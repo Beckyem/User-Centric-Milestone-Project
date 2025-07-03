@@ -104,6 +104,7 @@ nav {
 /* ===== Main Section ===== */
 main {
     margin-top: 69px;
+    padding-bottom: 20px;
     flex: 1 0 auto;
     /* For the #hero and #about section layout */
     display: flex;
@@ -239,12 +240,14 @@ main {
 }
 
 /* ##### Parks Page Styles #### */
-.video {
-    width: 104%;
-    position: relative;
-    right: 2%;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 4px 8px rgb(66, 66, 66);
+.video{
+    width:100%;
+    aspect-ratio:16/9;
+    height:auto;
+    display:block;
+    border:none;
+    box-shadow:0 4px 8px rgb(66, 66, 66, 0.7);
+    margin: 10px 0;
 }
 
 /* ===== Footer Section ===== */
