@@ -129,7 +129,7 @@ main {
 }
 
 /* ----- About Section ----- */
-#about {
+#about, #details {
     width: 100%;
     flex-grow: 1;
     padding: 2rem;
@@ -179,9 +179,7 @@ main {
 }
 
 /* ##### Camps Page Styles #### */
-#details {
-    padding: 2rem;
-}
+
 
 /* ===== Footer Section ===== */
 footer {
