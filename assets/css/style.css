@@ -340,21 +340,20 @@ footer h4 {
 /*####################################################################################################################*/
 @media screen and (min-width: 768px) { /* Tablets and Larger */
     /* ----- Nav Seciton ----- */
-    nav {
-        display: block;
-        position: relative;
-        width: fit-content;
-        padding-right: auto 1rem;
-        box-shadow: none;
+    nav{
+        display:block;
+        position:relative;
+        width:auto;
+        box-shadow:none;
+        padding:0 1rem;
     }
 
     #menu {
         display: flex;
     }
 
-    #menu > li {
-        padding-left: 1rem;
-        margin: 1.5rem 0 0 0;
+    #menu > li{
+        margin:0 0 0 1rem;
     }
 
     .nav-toggle-label{
@@ -373,8 +372,9 @@ footer h4 {
         padding-bottom: 100px;
     }
 
-    #hero-text {
-        margin: 34rem 0 3rem 5rem;
+    #hero-text{
+        /* Suggested fix while showcasing project to co-worker - W3Schools (https://www.w3schools.com/cssref/func_clamp.php) */
+        margin: clamp(4rem, 10vw, 12rem) 0 2rem 5%;
     }
 }
 /*####################################################################################################################*/
