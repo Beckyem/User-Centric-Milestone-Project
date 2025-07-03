@@ -22,6 +22,14 @@ body {
     display: none;
 }
 
+h2, h3, h4 {
+    font-family: Arima, Veranda, sans-serif;
+}
+
+p{
+    font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
+}
+
 /* ===== Header Section ===== */
 header {
     display: flex;
@@ -92,6 +100,7 @@ nav {
     font-size: 2rem;
     margin: auto 0;
 }
+
 /* ===== Main Section ===== */
 main {
     margin-top: 69px;
@@ -104,6 +113,7 @@ main {
     background-color: rgb(255, 255, 248);
 }
 
+/* ----- Hero Section ----- */
 #hero {
     background: url("../images/Owenea_River.jpg") center/cover;
     min-height: 70vh;
@@ -118,6 +128,7 @@ main {
     padding: 1rem 2rem;
 }
 
+/* ----- About Section ----- */
 #about {
     width: 100%;
     flex-grow: 1;
@@ -167,14 +178,6 @@ main {
     background-color: #417d5a;
 }
 
-h2, h3, h4 {
-    font-family: Arima, Veranda, sans-serif;
-}
-
-p{
-    font-family: "Merriweather Sans", Arial, Helvetica, sans-serif;
-}
-
 /* ===== Footer Section ===== */
 footer {
     background-color: inherit;
@@ -203,7 +206,7 @@ footer h4 {
     color: rgb(66, 66, 66);
     font-size: 1.5rem;
 }
-
+/*####################################################################################################################*/
 /* ======= Media Query Section ======= */
 @media screen and (min-width: 576px) { /* Landscape Phones and Larger */
     #hero-text {
@@ -260,7 +263,7 @@ footer h4 {
         right: 45%;
     }
 }
-
+/*####################################################################################################################*/
 @media screen and (min-width: 768px) { /* Tablets and Larger */
     /* ----- Nav Seciton ----- */
     nav {
@@ -300,7 +303,7 @@ footer h4 {
         margin: 34rem 0 3rem 5rem;
     }
 }
-
+/*####################################################################################################################*/
 @media screen and (min-width: 992px) { /* Laptops and Larger */
     #menu a:hover {
         border-bottom: 1px solid rgba(66,66, 66, 0.5);
